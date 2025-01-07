@@ -24,7 +24,6 @@ class StoreTaskRequest extends FormRequest
         return [
             'title' => ['required', 'string', 'max:70'],
             'description' => ['required', 'string', 'max:255'],
-            'status' => ['required', 'string', 'in:pending,in_progress,completed'],
             'category_id' => ['required', 'exists:categories,id'],
         ];
     }
