@@ -9,7 +9,7 @@ class Task extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'description', 'category_id'];
+    protected $fillable = ['title', 'description', 'category_id', 'status'];
 
     const STATUS_PENDING = 'pending';
     const STATUS_IN_PROGRESS = 'in_progress';

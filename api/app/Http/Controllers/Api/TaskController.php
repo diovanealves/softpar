@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\StoreTaskRequest;
-use App\Http\Requests\UpdateCompletedTaskRequest;
+use App\Http\Requests\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Models\Task;
 use Illuminate\Http\Request;
@@ -28,14 +28,7 @@ class TaskController
         return new TaskResource($task, 201);
     }
 
-    public function updateStatus(UpdateCompletedTaskRequest $request, Task $task){
-        $task->status = $request->status;
-        $task->save();
-
-        return new TaskResource($task);
-    }
-
-    public function update(StoreTaskRequest $request, Task $task)
+    public function update(UpdateTaskRequest $request, Task $task)
     {
         $task->update($request->validated());
         return new TaskResource($task);

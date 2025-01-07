@@ -12,4 +12,3 @@ Route::apiResource('task', TaskController::class)->except(
     'create', 'show', 'edit'
 );
 
-Route::put('task/{task}/status', [TaskController::class, 'updateStatus']);
