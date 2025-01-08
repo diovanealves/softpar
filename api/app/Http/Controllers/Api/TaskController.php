@@ -30,6 +30,10 @@ class TaskController
 
     public function update(UpdateTaskRequest $request, Task $task)
     {
+        if($request->status === 'completed') {
+            $task->concluded_at = now();
+        }
+
         $task->update($request->validated());
         return new TaskResource($task);
     }
