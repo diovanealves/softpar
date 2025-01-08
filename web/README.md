@@ -1,24 +1,25 @@
-# Quasar App (web)
+# ToDo List (web)
 
-A Quasar Project
+Uma plataforma para manter suas tarefas organizadas e gerenciar seu tempo de forma mais produtiva. Com uma interface limpa e fácil de usar
 
-## Install the dependencies
+![Imagem do Projeto](public/readme.png)
+
+## Como rodar o projeto
+
+Você vai acessar o diretório do FrontEnd
+
 ```bash
-yarn
-# or
+cd softpar/web
+```
+
+Instale as dependências do Quasar
+
+```bash
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Inicie o servidor de desenvolvimento
+
 ```bash
-quasar dev
+npx quasar dev
 ```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
