@@ -47,6 +47,15 @@ A seguir, as principais rotas disponíveis na API:
 
 ```bash
 docker compose up -d
+
+Sendo esses os dados padrão para inciar uma conexão com o Banco de Dados
+
+DB_CONNECTION=pgsql
+DB_HOST=localhost
+DB_PORT=5432
+DB_DATABASE=softpar
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
 6. Rode as migrações para c riar as tabelas no banco de dados

@@ -1,10 +1,10 @@
 # Todo List com Laravel e Quasar Framework
 
-Esse é um projeto de uma ToDo-list desenvolvida para um processo seletivo
+Esse é um projeto de uma ToDo-list desenvolvida para um processo seletivo. Aonde o foco foi a Criação, Busca, Edição e Deletar uma tarefa.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Backend**: Laravel
+- **Backend**: Laravel na versão 5.10 com o PHP na versão 8.4.1
 
   - Framework PHP robusto para criação de APIs RESTful e manipulação de banco de dados.
 
@@ -12,7 +12,7 @@ Esse é um projeto de uma ToDo-list desenvolvida para um processo seletivo
 
   - Framework baseado em Vue.js que facilita a criação de interfaces de usuário responsivas e performáticas.
 
-- **Banco de Dados**: PostgreSQL
+- **Banco de Dados**: PostgreSQL na versão 17.2.0
   - Sistema de gerenciamento de banco de dados utilizado para armazenar as tarefas e informações do usuário.
 
 ## 📋 Funcionalidades Desenvolvidas
@@ -28,7 +28,11 @@ Devido à limitação de tempo por causa do fim das minhas ferias.
 
 1. **Ordenação das Tarefas**
 
-2. **Destaque para Tarefas Concluídas**
+- Fiz o sistema de buscar as tarefas de forma decrescente ou crescente conforme a data de criação, mas não consegui implementar completamento no Front-End. Mas a rota para essa funcionalidade é a **api/task?order=desc | asc**.
+
+2. **Categoria das Tarefas**
+
+- Comecei a fazer o sistema de categorias aonde relacionava com a tabela de tarefas, mas faltou a implementação do sistema de cores personalizadas de acordo com cada categoria.
 
 ## Pastas de Estrutura
 
